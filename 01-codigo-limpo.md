@@ -4,7 +4,9 @@
 
 Entender o que é **código limpo**, por que ele é essencial e como desenvolver a mentalidade necessária para escrevê-lo no dia a dia.
 
-<img src="./assets/imagem01.png" width="100%">
+<img src="./assets/imagem01.png" width="80%">
+
+<img src="./assets/imagem02.png" width="80%">
 
 ---
 
@@ -53,6 +55,8 @@ Código confuso gera:
 - dependência de quem escreveu
 
 👉 Resultado: o sistema evolui cada vez mais devagar.
+
+<img src="./assets/imagem03.png" width="80%">
 
 ---
 
