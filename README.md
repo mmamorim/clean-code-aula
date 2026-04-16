@@ -2,11 +2,13 @@
 
 Este repositório contém um material didático sobre **Refatoração e Código Limpo**, baseado nos princípios do livro:
 
-| Cabeçalho 1 | Cabeçalho 2 | 
-| :--- | :--- | 
-| <img src="/capa.jpg" width="40%"> | *Clean Code: A Handbook of Agile Software Craftsmanship* — Robert C. Martin | 
+<table>
+  <tr>
+    <td width="120px"><img src="/capa.jpg" width="120px"></td>
+    <td>Clean Code: A Handbook of Agile Software Craftsmanship — Robert C. Martin</td>
+  </tr>
+</table>
 
->  
 
 O objetivo é transformar os conceitos do livro em **aulas práticas**, com explicações acessíveis, exemplos e aplicação no dia a dia do desenvolvimento de software.
 
