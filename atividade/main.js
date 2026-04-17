@@ -6,6 +6,7 @@ var t = document.getElementById("lettersBox");
 var u = document.getElementById("hangmanBox");
 var m = document.getElementById("messageBox");
 var n = document.getElementById("usedLetters");
+let hangmanImage = document.getElementById("hangmanImage");
 
 for (var k = 0; k < p.length; k = k + 1) {
     x.push("_");
@@ -50,15 +51,19 @@ function tentar() {
         u.innerHTML = " +---+<br> |   |<br>     |<br>     |<br>     |<br>     |<br>=======";
     }
     if (y == 1) {
+        hangmanImage.src = "./assets/Stage1.png"
         u.innerHTML = " +---+<br> |   |<br> O   |<br>     |<br>     |<br>     |<br>=======";
     }
     if (y == 2) {
+        hangmanImage.src = "./assets/Stage2.png"
         u.innerHTML = " +---+<br> |   |<br> O   |<br> |   |<br>     |<br>     |<br>=======";
     }
     if (y == 3) {
+        hangmanImage.src = "./assets/Stage3.png"
         u.innerHTML = " +---+<br> |   |<br> O   |<br>/|   |<br>     |<br>     |<br>=======";
     }
     if (y == 4) {
+        hangmanImage.src = "./assets/Stage4.png"
         u.innerHTML = " +---+<br> |   |<br> O   |<br>/|\\  |<br>     |<br>     |<br>=======";
     }
     if (y == 5) {
