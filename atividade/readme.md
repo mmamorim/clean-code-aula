@@ -162,6 +162,46 @@ Você deverá refatorar o código mantendo o mesmo comportamento geral do jogo.
 
 ---
 
+# Caso queiram adicionar mais palavras (nova funcionalidade)
+
+~~~js
+let words = [
+  { word: 'GOOGLE', tip: 'Site de buscas e pesquisas' },
+  { word: 'ESQUADRO', tip: 'Instrumento Triangular' },
+  { word: 'UPDATE', tip: 'Atualização de algum recurso' },
+  { word: 'DETERGENTE', tip: 'Você usa na cozinha' },
+  { word: 'GITHUB', tip: 'Facebook para programadores' },
+  { word: 'PANTERA', tip: 'Felino' },
+  { word: 'CARNAVAL', tip: 'Festa brasileira' },
+  { word: 'BARATA', tip: 'Inseto' },
+  { word: 'SORVETE', tip: 'Sobremesa Refescante' },
+  { word: 'SADICO', tip: 'Pessoa que sente prazer no sofrimento' },
+  { word: 'HIENA', tip: 'Animal da savana' },
+  { word: 'LEGADO', tip: 'Ideal deixado para próxima geração' },
+  { word: 'ENFERMEIRA', tip: 'Cuida dos doentes' },
+  { word: 'SOBRIO', tip: 'Pessoa que não ingeriu bebida alcoólica' },
+  { word: 'BOMBEIRO', tip: 'Presta socorro' },
+  { word: 'CARETA', tip: 'Modificar a face de forma espontânea' },
+  { word: 'ESPAGUETE', tip: 'Prato Italiano' },
+  { word: 'PAGINA', tip: 'Presente em um livro e na internet' },
+  { word: 'TERREMOTO', tip: 'Movimento tectônico' },
+  { word: 'BICICLETA', tip: 'Meio de transporte' },
+  { word: 'SANGUE', tip: 'Tem em seu corpo' },
+  { word: 'SAMBA', tip: 'Estilo musical' },
+  { word: 'FAVELA', tip: 'Local com péssimas condições de moradia' },
+  { word: 'ALMOFADA', tip: 'Decora o sofá' },
+  { word: 'SOQUETE', tip: 'Meia curta' },
+  { word: 'MANCHA', tip: 'Marca causada por danos superficiais' },
+  { word: 'PICASA', tip: 'Programa de edição de imagens' },
+  { word: 'BRASIL', tip: 'Tomou 7 gols' },
+  { word: 'PROCON', tip: 'Órgão público' },
+  { word: 'BACKUP', tip: 'Recurso utilizado para salvar arquivos' },
+  { word: 'SUDOKU', tip: 'Jogo de números' },
+  { word: 'ROMANTISMO', tip: 'Movimento literário' },
+  { word: 'SUSHI', tip: 'Comida japonesa' }
+]
+~~~
+
 ## Entregáveis
 
 Você deverá entregar:
