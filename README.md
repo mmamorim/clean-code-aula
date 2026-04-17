@@ -23,6 +23,9 @@ Este material tem como objetivo:
 - Aplicar boas práticas utilizadas no mercado
 - Estimular o pensamento crítico sobre qualidade de software
 
+> *ATIVIDADE PARA PRATICAR*
+> [ENUNCIADO](./atividade/)
+
 ---
 
 ## 🧠 Por que Código Limpo?

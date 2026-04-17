@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jogo</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f2f2f2
+        }
+
+        #a {
+            font-size: 30px;
+            letter-spacing: 10px;
+            margin: 20px
+        }
+
+        #b {
+            white-space: pre;
+            font-family: monospace;
+            font-size: 18px;
+            margin: 20px auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 200px
+        }
+
+        #c {
+            color: red;
+            font-weight: bold
+        }
+
+        button {
+            padding: 5px 10px
+        }
+
+        input {
+            padding: 5px;
+            text-align: center;
+            width: 40px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jogo da Forca</h1>
+    <div id="b"></div>
+    <div id="a"></div>
+    <input id="i" maxlength="1">
+    <button onclick="j()">Tentar</button>
+    <div id="c"></div>
+    <div id="d"></div>
+
+    <script>
+        var p = "JAVASCRIPT";
+        var x = [];
+        var y = 0;
+        var z = [];
+        var t = document.getElementById("a");
+        var u = document.getElementById("b");
+        var m = document.getElementById("c");
+        var n = document.getElementById("d");
+
+        for (var k = 0; k < p.length; k = k + 1) {
+            x.push("_");
+        }
+
+        u.innerHTML = " +---+<br> |   |<br>     |<br>     |<br>     |<br>     |<br>=======";
+        t.innerHTML = x.join(" ");
+
+        function j() {
+            var l = document.getElementById("i").value.toUpperCase();
+            document.getElementById("i").value = "";
+
+            if (l == "") {
+                m.innerHTML = "digite uma letra";
+                return;
+            }
+
+            if (z.indexOf(l) >= 0) {
+                m.innerHTML = "letra repetida";
+                return;
+            }
+
+            z.push(l);
+
+            var ok = false;
+
+            for (var q = 0; q < p.length; q = q + 1) {
+                if (p[q] == l) {
+                    x[q] = l;
+                    ok = true;
+                }
+            }
+
+            if (ok == false) {
+                y = y + 1;
+            }
+
+            t.innerHTML = x.join(" ");
+            n.innerHTML = "Letras usadas: " + z.join(", ");
+
+            if (y == 0) {
+                u.innerHTML = " +---+<br> |   |<br>     |<br>     |<br>     |<br>     |<br>=======";
+            }
+            if (y == 1) {
+                u.innerHTML = " +---+<br> |   |<br> O   |<br>     |<br>     |<br>     |<br>=======";
+            }
+            if (y == 2) {
+                u.innerHTML = " +---+<br> |   |<br> O   |<br> |   |<br>     |<br>     |<br>=======";
+            }
+            if (y == 3) {
+                u.innerHTML = " +---+<br> |   |<br> O   |<br>/|   |<br>     |<br>     |<br>=======";
+            }
+            if (y == 4) {
+                u.innerHTML = " +---+<br> |   |<br> O   |<br>/|\\  |<br>     |<br>     |<br>=======";
+            }
+            if (y == 5) {
+                u.innerHTML = " +---+<br> |   |<br> O   |<br>/|\\  |<br>/    |<br>     |<br>=======";
+            }
+            if (y == 6) {
+                u.innerHTML = " +---+<br> |   |<br> O   |<br>/|\\  |<br>/ \\  |<br>     |<br>=======";
+                m.innerHTML = "você perdeu! a palavra era " + p;
+                document.getElementById("i").disabled = true;
+            }
+
+            if (x.join("") == p) {
+                m.innerHTML = "você venceu!";
+                document.getElementById("i").disabled = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
