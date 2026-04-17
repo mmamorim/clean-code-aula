@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f2f2f2
+}
+
+#lettersBox {
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin: 20px;
+    background: #ceccd5;
+}
+
+#hangmanBox {
+    white-space: pre;
+    font-family: monospace;
+    font-size: 18px;
+    margin: 20px auto;
+    background: #c8b2b2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px
+}
+
+#messageBox {
+    color: red;
+    font-weight: bold
+}
+
+button {
+    padding: 5px 10px
+}
+
+input {
+    padding: 5px;
+    text-align: center;
+    width: 40px
+}
