@@ -12,7 +12,7 @@ Este repositório contém um material didático sobre **Refatoração e Código 
 
 O objetivo é transformar os conceitos do livro em **aulas práticas**, com explicações acessíveis, exemplos e aplicação no dia a dia do desenvolvimento de software.
 
----
+----
 
 ## 🎯 Objetivo
 
